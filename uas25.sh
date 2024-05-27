@@ -66,6 +66,11 @@ buka_file() {
     cat "$nama_file"
 }
 
+# Fungsi untuk monitoring proses
+monitoring_proses() {
+    echo "--Monitoring Proses--"
+    top
+}
 # Fungsi untuk memindai jaringan
 scan_network() {
     if ! command -v nmap &> /dev/null; then
@@ -114,6 +119,7 @@ while true; do
         4) ubah_izin_file ;;
         5) ubah_nama_file ;;
         6) buka_file ;;
+        7) monitoring_proses ;;
         8) scan_network ;;
         9) test_internet_speed ;;
         10) echo "Keluar dari program."; exit 0 ;;
