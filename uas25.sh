@@ -1,8 +1,14 @@
 #!/bin/sh
-# UAS25.sh
+# uas25.sh
 
 set -e
 
+echo "Nama           : Saka Nabil"
+echo "NIM            : 2341720108"
+echo "Kelas          : TI-1B"
+echo "Dosen Pengampu : Erfan Rohadi, ST., M.Eng., 
+                 Ph.D, Mohammad Faried Rahmat, S.ST., M.Tr.T"
+echo ""
 display_menu() {
     echo "----------Menu----------"
     echo "1. Buat File"
