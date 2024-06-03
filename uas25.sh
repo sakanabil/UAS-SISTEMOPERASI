@@ -1,10 +1,10 @@
 #!/bin/sh
-# uas.sh
+# UAS25.sh
 
 set -e
 
 display_menu() {
-    echo "--Menu--"
+    echo "----------Menu----------"
     echo "1. Buat File"
     echo "2. Lihat Permission File"
     echo "3. Hapus File"
@@ -15,7 +15,7 @@ display_menu() {
     echo "8. Pindai Jaringan"
     echo "9. Uji Kecepatan Internet"
     echo "10. Keluar"
-    echo "--------------"
+    echo "-------------------------"
 }
 
 # Fungsi untuk membuat file
@@ -71,6 +71,7 @@ monitoring_proses() {
     echo "--Monitoring Proses--"
     top
 }
+
 # Fungsi untuk memindai jaringan
 scan_network() {
     if ! command -v nmap &> /dev/null; then
